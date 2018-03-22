@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Flash Cards</title>
+  </head>
+  <body>
+    <div id="container">
+      <div id="header">
+        <h1>Flash Cards</h1>
+      </div>
+      <div id="main">
+        <div>
+          <h3>Subjects:</h3>
+          <div id="list"></div>
+        </div>
+        <div id="content">
+          <h2 id="prompt">Choose a subject!</h2>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <style media="screen">
+    body {
+      
+    }
+
+    #container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #header {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 780px;
+      height: 50px;
+      background: #222;
+      color: white;
+    }
+
+    #header h1 {
+      margin: 0;
+    }
+
+    #main {
+      display: flex;
+    }
+
+    #list div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 200px;
+      height: 75px;
+    }
+
+
+    #list button {
+      width: 100px;
+      height: 50px;
+      font-size: 18px;
+      border-radius: 3px;
+    }
+
+    #list button:hover {
+      cursor: pointer;
+      border: 1px solid black;
+      border-radius: 3px;
+    }
+
+    #content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 500px;
+      margin: 20px;
+      padding-left: 20px;
+    }
+
+    #content p {
+      padding: 10px;
+      border: 1px solid white;
+      font-size: 18px;
+    }
+
+    #content p:hover {
+      cursor: pointer;
+      background-color: rgb(200, 200, 200);
+      border: 1px solid black;
+      border-radius: 3px;
+    }
+
+  </style>
+
+  <script>
+
+  document.addEventListener("DOMContentLoaded", () => {
+    console.log("here");
+    cards = [
+      [
+        "Graphs",
+        "What is a graph?",
+        "A graph is a pair of sets (V, E), where V is the set of vertices and E is the set of edges."
+      ],
+      [
+        "Graphs",
+        "What is a vertex?",
+        "Each node of a graph is represented as a vertex."
+      ],
+      [
+        "Graphs",
+        "What is an edge?",
+        "Edge represents a path between two vertices."
+      ],
+      [
+        "Graphs",
+        "What is adjacency?",
+        "Two vertices are adjacent if they are connected by an edge."
+      ],
+      [
+        "Graphs",
+        "What is a path?",
+        "Path represents a sequence of edges between two vertices."
+      ]
+    ]
+
+    const list = document.getElementById("list")
+    const content = document.getElementById("content")
+
+    const prompt = document.getElementById("prompt")
+    prompt.addEventListener("click", () => {
+      if (content.childNodes.length < 4) {
+        const promptDetail = document.createElement("h3")
+        promptDetail.innerHTML = "Subjects are listed on the left"
+        content.appendChild(promptDetail)
+      }
+    })
+
+    let subjects = cards.reduce((obj, card) => {
+      if (!obj[card[0]]) obj[card[0]] = 0
+      obj[card[0]]++
+      return obj
+    }, {})
+    subjects = Object.keys(subjects)
+
+    for (let i = 0; i < subjects.length; i++) {
+      let item = document.createElement("div")
+
+      let button = document.createElement("button")
+      button.innerHTML = subjects[i]
+      button.addEventListener("click", () => {
+        while (content.firstChild) content.removeChild(content.firstChild)
+
+        let subjectCards = cards.filter(card => card[0] = subjects[i])
+        let randomIndex = parseInt(Math.floor(Math.random() * subjectCards.length))
+        let card = subjectCards[randomIndex]
+
+        let question = document.createElement("h3")
+        question.innerHTML = card[1]
+        content.appendChild(question)
+
+        let answer = document.createElement("p")
+        answer.innerHTML = "Solution"
+        answer.addEventListener("click", () => {
+          answer.innerHTML = card[2]
+        })
+        content.appendChild(answer)
+      })
+
+      item.appendChild(button)
+      list.appendChild(item)
+    }
+
+  })
+
+  </script>
+</html>
