@@ -1,5 +1,16 @@
 @import 'partials/reset';
 
+$primary_color: rgba(0, 26, 73, 1); //dark green
+$secondary_color: rgba(1, 149, 197, 0.1);
+$tertiary_color: rgba(0, 74, 136, 1);
+$fourth_color: rgba(0, 127, 193, 1.0); //pink
+$fifth_color:  rgba(0, 77, 139, 0.7); //lighter green
+$off_white: #FFF9FB;
+$off_black: #020F0F;
+
+$primary_font: 'Raleway', sans-serif;
+$title_font: 'Open Sans', sans-serif;
+
 #container {
   display: flex;
   flex-direction: column;
