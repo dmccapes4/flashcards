@@ -140,8 +140,9 @@ document.addEventListener("DOMContentLoaded", () => {
         // Image element holds code image
         let image = document.createElement("img")
         image.setAttribute("src", card[3])
-        if (code.firstChild) code.removeChild()
-        code.appendChild(image)
+
+        // Add image without duplicating
+        if (!code.firstChild) code.appendChild(image)
       })
 
       // Add answer and code to content
