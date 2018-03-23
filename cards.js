@@ -76,10 +76,15 @@ document.addEventListener("DOMContentLoaded", () => {
     ]
   ]
 
+  // List element will contain a list of subjects
   const list = document.getElementById("list")
+
+  // Content element will contain the question, answer and code
   const content = document.getElementById("content")
 
+  // Prompt is the initial element that instructs the user to select a Subject
   const prompt = document.getElementById("prompt")
+  // Clicking prompt gives further instructions
   prompt.addEventListener("click", () => {
     if (content.childNodes.length < 4) {
       const promptDetail = document.createElement("h3")
@@ -88,6 +93,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   })
 
+  // Get the subjects from cards by reducing them into a hash and using the keys
   let subjects = cards.reduce((obj, card) => {
     if (!obj[card[0]]) obj[card[0]] = 0
     obj[card[0]]++
@@ -95,42 +101,56 @@ document.addEventListener("DOMContentLoaded", () => {
   }, {})
   subjects = Object.keys(subjects)
 
+  // Populate list with subjects
   for (let i = 0; i < subjects.length; i++) {
     let item = document.createElement("div")
 
     let button = document.createElement("button")
     button.innerHTML = subjects[i]
+
+    // Clicking button brings up content
     button.addEventListener("click", () => {
       while (content.firstChild) content.removeChild(content.firstChild)
 
+      // Filter cards by subject
       let subjectCards = cards.filter(card => card[0] === subjects[i])
 
+      // Select a random card from subject
       let randomIndex = parseInt(Math.floor(Math.random() * subjectCards.length))
       let card = subjectCards[randomIndex]
 
+      // Display question
       let question = document.createElement("h3")
       question.innerHTML = card[1]
+
+      // Add question to content
       content.appendChild(question)
 
+      // Display placeholder for solution
       let answer = document.createElement("p")
       answer.innerHTML = "Solution"
 
+      // Code element will hold an image of the solution code
       let code = document.createElement("div")
-      code.innerHTML = "Code"
 
+      // Clicking 'solution' prints the solution and code image
       answer.addEventListener("click", () => {
         answer.innerHTML = card[2]
 
+        // Image element holds code image
         let image = document.createElement("img")
         image.setAttribute("src", card[3])
-        code.innerHTML = ""
         code.appendChild(image)
       })
+
+      // Add answer and code to content
       content.appendChild(answer)
       content.appendChild(code)
     })
 
+    // Add button to item
     item.appendChild(button)
+    // Add item to list
     list.appendChild(item)
   }
 
