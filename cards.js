@@ -128,6 +128,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       // Display placeholder for solution
       let answer = document.createElement("p")
+      answer.class = "solution"
       answer.innerHTML = "Solution"
 
       // Code element will hold an image of the solution code
