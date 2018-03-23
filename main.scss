@@ -14,7 +14,7 @@ $title_font: 'Open Sans', sans-serif;
 
 * {
   font-family: $primary_font;
-
+  transition: all 0.5s ease;
 }
 
 body {
@@ -46,6 +46,8 @@ body {
 
 #main {
   display: flex;
+
+  font-size: 20px;
 }
 
 #list {
@@ -91,7 +93,8 @@ body {
 
   h3 {
     margin-top: 30px;
-    padding-bottom: 10px;
+    padding: 20px;
+    font-size: 18px;
   }
   p {
    padding: 10px;
