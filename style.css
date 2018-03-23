@@ -41,6 +41,13 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+* {
+  font-family: "Raleway", sans-serif;
+  transition: all 0.5s ease; }
+
+body {
+  background: #FFF9FB; }
+
 #container {
   display: flex;
   flex-direction: column;
@@ -49,19 +56,22 @@ table {
 
 #header {
   display: flex;
+  margin-bottom: 20px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100vw;
   height: 75px;
-  background: #222;
-  color: white; }
+  font-size: 32px;
+  background: rgba(0, 77, 139, 0.7);
+  color: #FFF9FB; }
 
 #header h1 {
   margin: 0; }
 
 #main {
-  display: flex; }
+  display: flex;
+  font-size: 20px; }
 
 #list div {
   display: flex;
@@ -69,40 +79,44 @@ table {
   align-items: center;
   width: 200px;
   height: 75px; }
-
 #list button {
   width: 100px;
   height: 50px;
   font-size: 18px;
-  border-radius: 3px; }
-
+  border-radius: 3px;
+  background: #7E8D85; }
 #list button:hover {
+  background: #29BF89;
   cursor: pointer;
   border: 1px solid black;
   border-radius: 3px; }
 
 #content {
   display: flex;
+  background: #B0C4DE;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 500px;
-  margin: 20px;
-  padding-left: 20px; }
-
-#content p {
-  padding: 10px;
-  border: 1px solid white;
-  font-size: 18px; }
-
-#content p:hover {
-  cursor: pointer;
-  background-color: #c8c8c8;
-  border: 1px solid black;
-  border-radius: 3px; }
-
-#content img {
-  width: 500px;
-  height: auto; }
+  width: 600px;
+  margin: 20px; }
+  #content h3 {
+    margin-top: 30px;
+    padding: 20px;
+    font-size: 18px; }
+  #content p {
+    padding: 10px;
+    margin: 0px 20%;
+    border: 1px solid white;
+    background: #FFF9FB;
+    font-size: 18px; }
+  #content .solution:hover {
+    cursor: pointer;
+    background-color: #29BF89;
+    border: 1px solid black;
+    border-radius: 3px; }
+  #content img {
+    width: 500px;
+    height: auto;
+    padding: 20px 0px; }
 
 /*# sourceMappingURL=style.css.map */

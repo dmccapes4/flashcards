@@ -1,16 +1,25 @@
 @import 'partials/reset';
 
-$primary_color: rgba(0, 26, 73, 1); //dark green
-$secondary_color: rgba(1, 149, 197, 0.1);
-$tertiary_color: rgba(0, 74, 136, 1);
-$fourth_color: rgba(0, 127, 193, 1.0); //pink
+$primary_color: #7E8D85; //dark gray
+$secondary_color: #BDBDBE; //light gray
+$tertiary_color: #0083BB; // blue
+$fourth_color: #29BF89; //green
 $fifth_color:  rgba(0, 77, 139, 0.7); //lighter green
+$sixth_color: #B0C4DE; // light steel blue
 $off_white: #FFF9FB;
 $off_black: #020F0F;
 
 $primary_font: 'Raleway', sans-serif;
 $title_font: 'Open Sans', sans-serif;
 
+* {
+  font-family: $primary_font;
+  transition: all 0.5s ease;
+}
+
+body {
+  background: $off_white;
+}
 #container {
   display: flex;
   flex-direction: column;
@@ -20,13 +29,15 @@ $title_font: 'Open Sans', sans-serif;
 
 #header {
   display: flex;
+  margin-bottom: 20px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100vw;
   height: 75px;
-  background: #222;
-  color: white;
+  font-size: 32px;
+  background: $fifth_color;
+  color: $off_white;
 }
 
 #header h1 {
@@ -35,54 +46,74 @@ $title_font: 'Open Sans', sans-serif;
 
 #main {
   display: flex;
+
+  font-size: 20px;
 }
 
-#list div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 200px;
-  height: 75px;
+#list {
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 75px;
+  }
+
+  button {
+    width: 100px;
+    height: 50px;
+    font-size: 18px;
+    border-radius: 3px;
+    background: $primary_color;
+  }
+
+  button:hover {
+    background: $fourth_color;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 3px;
+  }
+
+
 }
 
 
-#list button {
-  width: 100px;
-  height: 50px;
-  font-size: 18px;
-  border-radius: 3px;
-}
 
-#list button:hover {
-  cursor: pointer;
-  border: 1px solid black;
-  border-radius: 3px;
-}
+
 
 #content {
   display: flex;
+  background: $sixth_color;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 500px;
+  width: 600px;
   margin: 20px;
-  padding-left: 20px;
-}
 
-#content p {
-  padding: 10px;
-  border: 1px solid white;
-  font-size: 18px;
-}
 
-#content p:hover {
-  cursor: pointer;
-  background-color: rgb(200, 200, 200);
-  border: 1px solid black;
-  border-radius: 3px;
-}
+  h3 {
+    margin-top: 30px;
+    padding: 20px;
+    font-size: 18px;
+  }
+  p {
+   padding: 10px;
+   margin: 0px 20%;
+   border: 1px solid white;
+   background: $off_white;
+   font-size: 18px;
+  }
 
-#content img {
-  width: 500px;
-  height: auto;
+ .solution:hover {
+   cursor: pointer;
+   background-color: $fourth_color;
+   border: 1px solid black;
+   border-radius: 3px;
+  }
+
+ img {
+   width: 500px;
+   height: auto;
+   padding: 20px 0px;
+  }
 }
