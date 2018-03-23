@@ -7,7 +7,7 @@
   <body>
     <div id="container">
       <div id="header">
-        <h1>Flash Cards</h1>
+        <h1>CS Flash Cards!</h1>
       </div>
       <div id="main">
         <div>
@@ -38,8 +38,8 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      width: 780px;
-      height: 50px;
+      width: 100vw;
+      height: 75px;
       background: #222;
       color: white;
     }
@@ -102,12 +102,31 @@
   <script>
 
   document.addEventListener("DOMContentLoaded", () => {
-    console.log("here");
     cards = [
+      [
+        "Arrays",
+        "Given a 32-bit signed integer, reverse digits of an integer.",
+        "Assign an integer to check for negativity. Set x to absolute power. add x modulo 10 to array and divide x by 10 till x=0. Reverse the array and loop through it adding the element times 10 to the power of i. Check that the number is still a 32 bit signed integer and return it."
+      ],
       [
         "Arrays",
         "How do you rotate a matrix 90 degrees in place?",
         "Take it's transpose then reverse each column"
+      ],
+      [
+        "Arrays",
+        "Given a sequence of integers as an array, determine whether it is possible to obtain a strictly increasing sequence by removing no more than one element from the array.",
+        "Define a boolean oneOff. Cycle through the sequence. Check if the current number is greater than the next number. Return false if the previous number is less than the current number. If oneOff is already true return false. Otherwise set oneOff to true and check if the previous element is greater than or equal to the next element. If so return true if you're at the end of the sequence."
+      ],
+      [
+        "Arrays",
+        "Given an array find the first duplicate. That is the first second occurence of an element",
+        "Make a hash to keep track of the occurence of elements. Return the first element with count=2."
+      ],
+      [
+        "Arrays",
+        "Given a string, find and return the first instance of a non-repeating character in it.",
+        "Use a hash to store the count of different characters then run through the string again to return the first character that has count=1"
       ],
       [
         "Graphs",
@@ -163,7 +182,8 @@
       button.addEventListener("click", () => {
         while (content.firstChild) content.removeChild(content.firstChild)
 
-        let subjectCards = cards.filter(card => card[0] = subjects[i])
+        let subjectCards = cards.filter(card => card[0] === subjects[i])
+        console.log(subjectCards);
         let randomIndex = parseInt(Math.floor(Math.random() * subjectCards.length))
         let card = subjectCards[randomIndex]
 
