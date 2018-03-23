@@ -43,7 +43,8 @@ table {
 
 * {
   font-family: "Raleway", sans-serif;
-  transition: all 0.5s ease; }
+  transition: all 0.5s ease;
+  text-size-adjust: none; }
 
 body {
   background: #FFF9FB; }
