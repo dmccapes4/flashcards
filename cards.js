@@ -6,37 +6,37 @@ document.addEventListener("DOMContentLoaded", () => {
       "Arrays",
       "Determine whether an integer is a palindrome. Do this without extra space.",
       "Return false if the integer is negative. Write another function to reverse the integer using modulo and dividing by 10. Check if the reverse is equal to the number.",
-      ""
+      "http://res.cloudinary.com/mccapes-construction/image/upload/v1521836571/integerpalindrome_bek2rg.png"
     ],
     [
       "Arrays",
       "Given a 32-bit signed integer, reverse digits of an integer.",
       "Assign an integer to check for negativity. Set x to absolute power. add x modulo 10 to array and divide x by 10 till x=0. Reverse the array and loop through it adding the element times 10 to the power of i. Check that the number is still a 32 bit signed integer and return it.",
-      ""
+      "http://res.cloudinary.com/mccapes-construction/image/upload/v1521836670/reverseinteger_l1itlt.png"
     ],
     [
       "Arrays",
       "How do you rotate a matrix 90 degrees in place?",
       "Take it's transpose using map twice then reverse each row.",
-      ""
+      "http://res.cloudinary.com/mccapes-construction/image/upload/v1521837172/rotateimage_sayoxo.png"
     ],
     [
       "Arrays",
       "Given a sequence of integers as an array, determine whether it is possible to obtain a strictly increasing sequence by removing no more than one element from the array.",
       "Define a boolean oneOff. Cycle through the sequence. Check if the current number is greater than the next number. Return false if the previous number is less than the current number. If oneOff is already true return false. Otherwise set oneOff to true and check if the previous element is greater than or equal to the next element. If so return true if you're at the end of the sequence.",
-      ""
+      "http://res.cloudinary.com/mccapes-construction/image/upload/v1521837322/almostincreasingsequence_lyqiw2.png"
     ],
     [
       "Arrays",
       "Given an array find the first duplicate. That is the first second occurence of an element",
       "Make a hash to keep track of the occurence of elements. Return the first element with count=2.",
-      ""
+      "http://res.cloudinary.com/mccapes-construction/image/upload/v1521837390/firstduplicate_g0zam7.png"
     ],
     [
       "Arrays",
       "Given a string, find and return the first instance of a non-repeating character in it.",
       "Use a hash to store the count of different characters then run through the string again to return the first character that has count=1",
-      ""
+      "http://res.cloudinary.com/mccapes-construction/image/upload/v1521837455/firstnotrepeatingcharacter_xgq4cl.png"
     ],
     [
       "Graphs",
