@@ -127,28 +127,30 @@ document.addEventListener("DOMContentLoaded", () => {
       content.appendChild(question)
 
       // Display placeholder for solution
-      let answer = document.createElement("p")
-      answer.class = "solution"
-      answer.innerHTML = "Solution"
-
+      let solution = document.createElement("p")
+      solution.className = "solution";
+      solution.innerHTML = "Solution"
+      content.appendChild(solution);
       // Code element will hold an image of the solution code
       let code = document.createElement("div")
 
       // Clicking 'solution' prints the solution and code image
-      answer.addEventListener("click", () => {
+      solution.addEventListener("click", () => {
+        content.removeChild(solution);
+        let answer = document.createElement("p")
         answer.innerHTML = card[2]
 
         // Image element holds code image
         let image = document.createElement("img")
         image.setAttribute("src", card[3])
-
+        code.appendChild(image)
         // Add image without duplicating
-        if (!code.firstChild) code.appendChild(image)
+        content.appendChild(answer)
+        content.appendChild(code)
       })
 
       // Add answer and code to content
-      content.appendChild(answer)
-      content.appendChild(code)
+
     })
 
     // Add button to item
