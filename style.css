@@ -96,20 +96,23 @@ body {
   display: flex;
   background: #B0C4DE;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   width: 600px;
   margin: 20px; }
   #content h3 {
     margin-top: 30px;
     padding: 20px;
-    font-size: 18px; }
+    font-size: 18px;
+    flex: 1; }
   #content p {
     padding: 10px;
     margin: 0px 20%;
     border: 1px solid white;
     background: #FFF9FB;
     font-size: 18px; }
+  #content .solution {
+    margin-bottom: 15px; }
   #content .solution:hover {
     cursor: pointer;
     background-color: #29BF89;
