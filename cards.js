@@ -73,7 +73,16 @@ document.addEventListener("DOMContentLoaded", () => {
       "Given two strings, find the number of common characters between them.",
       "Create a hash for each string to count the characters in the string. Create a counter. Loop through the keys for one to check if it's in the other and add the lower occurence of the character.",
       "./images/commoncharactercount.png"
-    ]
+    ],
+    ["JavaScript",
+    "What is a potential pitfall with using typeof bar === 'object' to determine if bar is an object? How can this pitfall be avoided?",
+    "Although tyepof bar === 'object' is effective, null is also considered an object so make sure that the object is not null as well",
+    ""],
+    ["JavaScript",
+    "What does var a = b = 3 really mean?",
+    "b = 3, var a = b, b ends up being a global variable, a is a local variable",
+    ""],
+
   ]
 
   // List element will contain a list of subjects
