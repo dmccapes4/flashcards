@@ -82,7 +82,17 @@ document.addEventListener("DOMContentLoaded", () => {
     "What does var a = b = 3 really mean?",
     "b = 3, var a = b, b ends up being a global variable, a is a local variable",
     ""],
-
+    ["JavaScript",
+    "What is the significance of, and reason for, wrapping the entire content of a JavaScript source file in a function block?",
+    "Popular amongst JavaScript libraries, creates a closure around the contents of the file which stops potential name clashes between different JavaScript modules and libraries",
+    ""],
+    ["JavaScript",
+    "What is the significance, and what the the benefits, of including 'use strict' at the beginning of a JavaScript source file?",
+    "'use strict' is a way to voluntarily enforce stricter parsing and error handling on your JavaScript code at runtime. (makes debugging easier, prevents accidental globals)",
+    ""],
+    ["JavaScript",
+    "What is NaN? What is its type? How can you reliably test if a value is equal to NaN?"]
+    
   ]
 
   // List element will contain a list of subjects
