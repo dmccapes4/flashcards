@@ -91,10 +91,17 @@ document.addEventListener("DOMContentLoaded", () => {
     "'use strict' is a way to voluntarily enforce stricter parsing and error handling on your JavaScript code at runtime. (makes debugging easier, prevents accidental globals)",
     ""],
     ["JavaScript",
-    "What is NaN? What is its type? How can you reliably test if a value is equal to NaN?"]
+    "What is NaN? What is its type? How can you reliably test if a value is equal to NaN?",
     "Not a number. ES6 has a Number.isNaN() which is probably the most reliably way to determing this.",
     ""],
-    
+    ["CSS",
+    "What are CSS pseudo selectors?",
+    "They define a state in a selected element that can be used to modify the style in that particular state. This is especially useful when creating user-interactive elements that provide feedback to the user (:hover)",
+    ""
+    ]
+    []
+  ]
+
 
   // List element will contain a list of subjects
   const list = document.getElementById("list")
