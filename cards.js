@@ -98,8 +98,16 @@ document.addEventListener("DOMContentLoaded", () => {
     "What are CSS pseudo selectors?",
     "They define a state in a selected element that can be used to modify the style in that particular state. This is especially useful when creating user-interactive elements that provide feedback to the user (:hover)",
     ""
-    ]
-    []
+  ],
+    ["CSS",
+    "What are keyframes?",
+    "They allow you to gradually change the css of a selected element from one style to another. Keyframes are utilized in animations to define the style at different times of the animation. For example, you can simply define a start and end style of an animation or go further and define what happens at the halfway point of the animation using keyframes",
+    ""
+  ],
+  ["CSS",
+   "What is a CSS preprocessor? Could you give one example? What is the benefit of using one?",
+   "A CSS preprocessor extends standard CSS with quite a few"
+  ]
   ]
 
 
