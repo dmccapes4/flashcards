@@ -106,8 +106,9 @@ document.addEventListener("DOMContentLoaded", () => {
   ],
   ["CSS",
    "What is a CSS preprocessor? Could you give one example? What is the benefit of using one?",
-   "A CSS preprocessor extends standard CSS with quite a few"
-  ]
+   "A CSS preprocessor extends standard CSS with quite a few assets that make styling definitions more streamline and resuable. One example is SASS. Since classing CSS is fairly limited in what it can offer with regards to syntax and definining styles, SASS allows you to add variable declarations, nested styling, etc",
+   ""
+ ]
   ]
 
 
