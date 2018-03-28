@@ -92,8 +92,9 @@ document.addEventListener("DOMContentLoaded", () => {
     ""],
     ["JavaScript",
     "What is NaN? What is its type? How can you reliably test if a value is equal to NaN?"]
+    "Not a number. ES6 has a Number.isNaN() which is probably the most reliably way to determing this.",
+    ""],
     
-  ]
 
   // List element will contain a list of subjects
   const list = document.getElementById("list")
