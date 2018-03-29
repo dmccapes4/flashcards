@@ -117,8 +117,13 @@ document.addEventListener("DOMContentLoaded", () => {
   "What are the disadvantages of using JavaScript?",
   "Main weakness is security! Aldo its versatility can lead to inconsistent performance across different platforms.",
   ""
-  ]
-  ]
+],
+  ["JavaScript",
+  "Explain the difference between classical inheritance and prototypal inheritance.",
+  "Classical: A constructor function instantiates an instance via the 'new' keyword. This new instance inherits properties from parent class, Prototypal Inheritance: An instance is created by cloning na existing object that serves as a prototype(Usually created through a factory method(can have selective inheritance from many different objects))",
+  ""]
+],
+
 
 
   // List element will contain a list of subjects
