@@ -121,7 +121,16 @@ document.addEventListener("DOMContentLoaded", () => {
   ["JavaScript",
   "Explain the difference between classical inheritance and prototypal inheritance.",
   "Classical: A constructor function instantiates an instance via the 'new' keyword. This new instance inherits properties from parent class, Prototypal Inheritance: An instance is created by cloning na existing object that serves as a prototype(Usually created through a factory method(can have selective inheritance from many different objects))",
-  ""]
+  ""],
+  ["JavaScript",
+  "Give an example of a time that you used functional programming in JavaScript",
+  "functional purity, first-class functions, higher-order functions, or using functions as arguments and values",
+  ""
+],
+  ["JavaScript",
+  "Give an example of a time that your used Prototypal OO is JavaScript.",
+  "Objects linked to other objects - when and where to use prototypes, liberal use of 'Object.assign()', or mixins",
+""]
 ],
 
 
