@@ -131,7 +131,7 @@ document.addEventListener("DOMContentLoaded", () => {
   "Give an example of a time that your used Prototypal OO is JavaScript.",
   "Objects linked to other objects - when and where to use prototypes, liberal use of 'Object.assign()', or mixins",
 ""]
-],
+]
 
 
 
