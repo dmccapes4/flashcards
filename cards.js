@@ -108,7 +108,16 @@ document.addEventListener("DOMContentLoaded", () => {
    "What is a CSS preprocessor? Could you give one example? What is the benefit of using one?",
    "A CSS preprocessor extends standard CSS with quite a few assets that make styling definitions more streamline and resuable. One example is SASS. Since classing CSS is fairly limited in what it can offer with regards to syntax and definining styles, SASS allows you to add variable declarations, nested styling, etc",
    ""
- ]
+ ],
+  ["JavaScript",
+  "What are the advantages of using JavaScript?",
+  "Lightweight: JavaScript can be executed within the user's browser/doesn't need to talk to backend, opens the door to many other UI/UX optimizations",
+  ""],
+  ["JavaScript",
+  "What are the disadvantages of using JavaScript?",
+  "Main weakness is security! Aldo its versatility can lead to inconsistent performance across different platforms.",
+  ""
+  ]
   ]
 
 
