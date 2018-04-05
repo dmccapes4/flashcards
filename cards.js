@@ -132,7 +132,11 @@ document.addEventListener("DOMContentLoaded", () => {
   "Objects linked to other objects - when and where to use prototypes, liberal use of 'Object.assign()', or mixins",
 ""],
 
-["Bob","test", "test", ""],
+["JavaScript",
+"What does 3 + true print?",
+"4", ""]
+
+
 ]
 
 
