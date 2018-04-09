@@ -158,7 +158,37 @@ document.addEventListener("DOMContentLoaded", () => {
 
 ["JavaScript",
 "What does 3 + true print?",
-"4", ""]
+"4", ""],
+[
+  "JavaScript",
+  "What is a closure and how are they used?",
+  "A closure is the combination of a function and the lexical environment within which that function was declared. Closures are useful because the let you associate some data (the lexical environment) with a function that operates on the data in a similar way to object-oriented programming. This makes closures useful for callback functions executed in response to an event such as a click.",
+  ""
+],
+[
+  "CSS",
+  "Give a high level overview of how CSS grids work.",
+  "The CSS Grid Layout Module offers a grid-based layout system, with rows and columns, making it easier to design web pages without having to use floats and positioning.",
+  ""
+],
+[
+  "Graphs",
+  "What are the steps for DFS on a graph?",
+  "Start at the root and explore as far as possible along each branch before backtracking.",
+  "./images/graph-dfs.jpeg"
+],
+[
+  "HTTP",
+  "What happens when you hit type www.google.com and hit enter?",
+  "1. Browser checks the cache for a DNS record to find the corresponding IP address of www.google.com \n 2. If requested URL is not in the cache, ISP's DNS server initiatess a DNS query to find the IP address of the server that hosts google.com. \n 3. Browser initiates a TCP connection with the server. \n 5. The browser sends a HTTP request to the web server. \n 6. The server handles the request and sends back a response. \n 7. The server sends out an HTTP response. \n 8. The browser displays the HTML content",
+  "./images/whathappensgoogleenter.png"
+],
+[
+  "JavaScript",
+  "What's the event loop? How does it work?",
+  "The event loop is what allows JavaScript to use callbacks and promises. JavaScript has a single call stack in which it keeps track of what function we're currently executing and what function is to be executed after that. Every time you call a setTimeout function or you do some asyn operation it is added to the Event Table. The Event Table keeps track of events and sends them to the Event Queue. The Event Queue is similar to the stack. The Event Loop is a constantly running process that checks if the call stack is empty and if it is empty it looks into the Event Queue. If there is something waiting on the Event Queue it is put back on the stack.",
+  "./images/jsruntime"
+]
 
 
 ]
@@ -190,11 +220,15 @@ document.addEventListener("DOMContentLoaded", () => {
   subjects = Object.keys(subjects)
 
   // Populate list with subjects
-  for (let i = 0; i < subjects.length; i++) {
+  for (let i = -1; i < subjects.length; i++) {
     let item = document.createElement("div")
 
     let button = document.createElement("button")
-    button.innerHTML = subjects[i]
+    if (i === -1) {
+      button.innerHTML = "Random"
+    } else {
+      button.innerHTML = subjects[i]
+    }
 
     // Clicking button brings up content
     button.addEventListener("click", () => {
@@ -202,6 +236,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
       // Filter cards by subject
       let subjectCards = cards.filter(card => card[0] === subjects[i])
+      // Random is all cards
+      if (subjectCards.length === 0) subjectCards = cards;
 
       // Select a random card from subject
       let randomIndex = parseInt(Math.floor(Math.random() * subjectCards.length))
