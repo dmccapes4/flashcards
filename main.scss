@@ -15,11 +15,13 @@ $title_font: 'Open Sans', sans-serif;
 * {
   font-family: $primary_font;
   transition: all 0.5s ease;
+  text-size-adjust: none;
 }
 
 body {
   background: $off_white;
 }
+
 #container {
   display: flex;
   flex-direction: column;
@@ -85,7 +87,7 @@ body {
   display: flex;
   background: $sixth_color;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   width: 600px;
   margin: 20px;
@@ -95,6 +97,7 @@ body {
     margin-top: 30px;
     padding: 20px;
     font-size: 18px;
+    flex: 1;
   }
   p {
    padding: 10px;
@@ -103,7 +106,9 @@ body {
    background: $off_white;
    font-size: 18px;
   }
-
+  .solution {
+    margin-bottom: 15px;
+  }
  .solution:hover {
    cursor: pointer;
    background-color: $fourth_color;

@@ -99,6 +99,71 @@ document.addEventListener("DOMContentLoaded", () => {
       ""
     ]
   ]
+    ["JavaScript",
+    "What is a potential pitfall with using typeof bar === 'object' to determine if bar is an object? How can this pitfall be avoided?",
+    "Although tyepof bar === 'object' is effective, null is also considered an object so make sure that the object is not null as well",
+    ""],
+    ["JavaScript",
+    "What does var a = b = 3 really mean?",
+    "b = 3, var a = b, b ends up being a global variable, a is a local variable",
+    ""],
+    ["JavaScript",
+    "What is the significance of, and reason for, wrapping the entire content of a JavaScript source file in a function block?",
+    "Popular amongst JavaScript libraries, creates a closure around the contents of the file which stops potential name clashes between different JavaScript modules and libraries",
+    ""],
+    ["JavaScript",
+    "What is the significance, and what the the benefits, of including 'use strict' at the beginning of a JavaScript source file?",
+    "'use strict' is a way to voluntarily enforce stricter parsing and error handling on your JavaScript code at runtime. (makes debugging easier, prevents accidental globals)",
+    ""],
+    ["JavaScript",
+    "What is NaN? What is its type? How can you reliably test if a value is equal to NaN?",
+    "Not a number. ES6 has a Number.isNaN() which is probably the most reliably way to determing this.",
+    ""],
+    ["CSS",
+    "What are CSS pseudo selectors?",
+    "They define a state in a selected element that can be used to modify the style in that particular state. This is especially useful when creating user-interactive elements that provide feedback to the user (:hover)",
+    ""
+  ],
+    ["CSS",
+    "What are keyframes?",
+    "They allow you to gradually change the css of a selected element from one style to another. Keyframes are utilized in animations to define the style at different times of the animation. For example, you can simply define a start and end style of an animation or go further and define what happens at the halfway point of the animation using keyframes",
+    ""
+  ],
+  ["CSS",
+   "What is a CSS preprocessor? Could you give one example? What is the benefit of using one?",
+   "A CSS preprocessor extends standard CSS with quite a few assets that make styling definitions more streamline and resuable. One example is SASS. Since classing CSS is fairly limited in what it can offer with regards to syntax and definining styles, SASS allows you to add variable declarations, nested styling, etc",
+   ""
+ ],
+  ["JavaScript",
+  "What are the advantages of using JavaScript?",
+  "Lightweight: JavaScript can be executed within the user's browser/doesn't need to talk to backend, opens the door to many other UI/UX optimizations",
+  ""],
+  ["JavaScript",
+  "What are the disadvantages of using JavaScript?",
+  "Main weakness is security! Aldo its versatility can lead to inconsistent performance across different platforms.",
+  ""
+],
+  ["JavaScript",
+  "Explain the difference between classical inheritance and prototypal inheritance.",
+  "Classical: A constructor function instantiates an instance via the 'new' keyword. This new instance inherits properties from parent class, Prototypal Inheritance: An instance is created by cloning na existing object that serves as a prototype(Usually created through a factory method(can have selective inheritance from many different objects))",
+  ""],
+  ["JavaScript",
+  "Give an example of a time that you used functional programming in JavaScript",
+  "functional purity, first-class functions, higher-order functions, or using functions as arguments and values",
+  ""
+],
+  ["JavaScript",
+  "Give an example of a time that your used Prototypal OO is JavaScript.",
+  "Objects linked to other objects - when and where to use prototypes, liberal use of 'Object.assign()', or mixins",
+""],
+
+["JavaScript",
+"What does 3 + true print?",
+"4", ""]
+
+
+]
+
 
   // List element will contain a list of subjects
   const list = document.getElementById("list")
