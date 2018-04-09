@@ -87,7 +87,7 @@ document.addEventListener("DOMContentLoaded", () => {
       "./images/restful.jpg"
     ],
     [
-      "HTML",
+      "Internet",
       "List the key benefits of HTML5",
       "1: Responsive design makes it easy to create mobile ready projects \n 2: Cross browser support \n 3: Game development using <canvas> tag \n 4: Better interactions such as drag and drop and canvas \n 5: Local storage feature allows for storage across multiple windows \n 6: Video and Audio support with <video> and <audio> tags",
       ""
@@ -178,7 +178,7 @@ document.addEventListener("DOMContentLoaded", () => {
   "./images/graph-dfs.jpeg"
 ],
 [
-  "HTTP",
+  "Internet",
   "What happens when you hit type www.google.com and hit enter?",
   "1. Browser checks the cache for a DNS record to find the corresponding IP address of www.google.com \n 2. If requested URL is not in the cache, ISP's DNS server initiatess a DNS query to find the IP address of the server that hosts google.com. \n 3. Browser initiates a TCP connection with the server. \n 5. The browser sends a HTTP request to the web server. \n 6. The server handles the request and sends back a response. \n 7. The server sends out an HTTP response. \n 8. The browser displays the HTML content",
   "./images/whathappensgoogleenter.png"
@@ -188,9 +188,73 @@ document.addEventListener("DOMContentLoaded", () => {
   "What's the event loop? How does it work?",
   "The event loop is what allows JavaScript to use callbacks and promises. JavaScript has a single call stack in which it keeps track of what function we're currently executing and what function is to be executed after that. Every time you call a setTimeout function or you do some asyn operation it is added to the Event Table. The Event Table keeps track of events and sends them to the Event Queue. The Event Queue is similar to the stack. The Event Loop is a constantly running process that checks if the call stack is empty and if it is empty it looks into the Event Queue. If there is something waiting on the Event Queue it is put back on the stack.",
   "./images/jsruntime"
+],
+[
+  "Graphs",
+  "What are the steps for BFS on a graph?",
+  "Start at the tree root and explore the neighbor nodes first before moving to the next level neighbors.",
+  "./images/graphbfs.jpeg"
+],
+[
+  "Internet",
+  "How does DNS work?",
+  "When you enter a URL into your Web browser your DNS server uses it's resources to resolve the name into the IP address for the appropriate Web server.",
+  "./images/howdnsworks.png"
+],
+[
+  "React",
+  "What lifecycle methods get called in the mounting phase? What are the use cases for each of those methods?",
+  "constructor, componentWillMount, render, componentDidMount",
+  "./images/reactlifecyclemounting.jpeg"
+],
+[
+  "Graphs",
+  "Explain the steps of topological sort.",
+  "First find a list of 'start nodes' which have no incoming edges and insert them into a set S; at least one such node must exist in a non-empty acyclic graph. Then:",
+  "./images/kahnsalgorithm.jpeg"
+],
+[
+  "Internet",
+  "What is TCP? When is it used? How does it work?",
+  "Transmission Control Protocol is one of the main protocols of the Internet protocol suite. TCP provides reliable, ordered, and error-checked delivery of a stream of octets (bytes) between applications running on hosts communicating by an IP network. It is used for World Wide Web, email, remote administration and file transfer.",
+  "./images/tcp.png"
+],
+[
+  "JavaScript",
+  "What's an IFFE? When would you use it?",
+  "An immediately-invoked function expression executes immediately after it's created.",
+  "./images/iffe.jpeg"
+],
+[
+  "React",
+  "What lifecycle methods get called in the update phase? What are the use cases for each of those methods? What method gets called in the unmounting phase?",
+  "componentWillReceiveProps, shouldComponentUpdate, componentWillUpdate, render, componentDidUpdate",
+  "./images/reactlifecycleupdate.jpeg"
+],
+[
+  "Graphs",
+  "Explain the steps of Djikstra shortest-path algorithm.",
+  "define: 's'=source node; 'dist'=array of distances from the 's'; 'Q'=queue of all nodes in the graph; 'S'=an empty set. Algorithm: 1. While Q is not empty, pop the node v, that is not already in S, from Q with the smallest dist(v). 2. Add a node v to S to indicate v has been visited. 3. Update dist values of adjacent nodes of the current node v as follows: for each node u, if dist(v)+weight(u,v)<dist(u) there is a new minimal distance found for u. ;; The algorithm has visited all nodes and found the smalles distance to each node. dist now contains the shortest path from source s.",
+  "./images/dijkstrasshortestpath.jpeg"
+],
+[
+  "Internet",
+  "What is UDP? When would you use it?",
+  "User Datagram Protocol is one of the core members of the Internet protocol suite. UDP uses a simple connectionless communication model with a minimum of protocal mechanism. It provides checksums for data integrity and port numbers for addressing different functions at the source and destination of the datagram. UDP is suitable for purposes where error checking and correction are either not necessary or are performed in the application; UDP avoids the overhead of such processing in the protocol stack.",
+  "./images/udp.jpg"
+],
+[
+  "JavaScript",
+  "== vs. ===",
+  "The identity (===) operator behaves identically to the equality (==) operator except no type conversion is done, and the types must be the same to be considered equal.",
+  ""
+],
+[
+  "JavaScript",
+  "What is this in JS? What are some common pitfalls with this?",
+  "In most cases, the value of 'this' is determined by how a function is called. It can't be set by assignment during execution, and it may be different each time the function is called. ES5 introduced the 'bind' method to set the value of a function's 'this' regardless of how it's called, and ES2015 introduced arrow functions which don't provide their own 'this' binding (it retains the 'this' value of the enclosing lexical context).",
+  ""
 ]
-
-
 ]
 
 
