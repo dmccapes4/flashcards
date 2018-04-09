@@ -97,8 +97,7 @@ document.addEventListener("DOMContentLoaded", () => {
       "How do media queries work?",
       "Media queries are useful when you want to apply CSS styles depending on a device's general type (such as print vs. screen), specific characteristics (such as the width of the browser viewport), or the environment (such as as ambient light conditions).",
       ""
-    ]
-  ]
+    ],
     ["JavaScript",
     "What is a potential pitfall with using typeof bar === 'object' to determine if bar is an object? How can this pitfall be avoided?",
     "Although tyepof bar === 'object' is effective, null is also considered an object so make sure that the object is not null as well",
