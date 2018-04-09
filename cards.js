@@ -81,19 +81,19 @@ document.addEventListener("DOMContentLoaded", () => {
       "./images/prototype.png"
     ],
     [
-      "Back End",
+      "APIs",
       "What does it mean to be RESTful",
       "RESTful APIs are commonly used by browsers and companies that connect and interact with cloud services. A RESTful API breaks down a transaction to create a series of small modules which address particulat underlying parts of the transaction. All RESTful calls are stateless and can be freely deployed if something fails as well as sale to accomodate load changes.",
       "./images/restful.jpg"
     ],
     [
-      "Front End",
+      "HTML",
       "List the key benefits of HTML5",
       "1: Responsive design makes it easy to create mobile ready projects \n 2: Cross browser support \n 3: Game development using <canvas> tag \n 4: Better interactions such as drag and drop and canvas \n 5: Local storage feature allows for storage across multiple windows \n 6: Video and Audio support with <video> and <audio> tags",
       ""
     ],
     [
-      "Front End",
+      "CSS",
       "How do media queries work?",
       "Media queries are useful when you want to apply CSS styles depending on a device's general type (such as print vs. screen), specific characteristics (such as the width of the browser viewport), or the environment (such as as ambient light conditions).",
       ""
