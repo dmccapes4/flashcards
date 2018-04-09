@@ -74,6 +74,10 @@ body {
   display: flex;
   font-size: 20px; }
 
+#prompt {
+  margin-top: 45px;
+}
+
 #list div {
   display: flex;
   justify-content: center;
@@ -97,7 +101,7 @@ body {
   display: flex;
   background: #B0C4DE;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
   width: 600px;
   margin: 20px; }
