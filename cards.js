@@ -254,6 +254,12 @@ document.addEventListener("DOMContentLoaded", () => {
   "What is this in JS? What are some common pitfalls with this?",
   "In most cases, the value of 'this' is determined by how a function is called. It can't be set by assignment during execution, and it may be different each time the function is called. ES5 introduced the 'bind' method to set the value of a function's 'this' regardless of how it's called, and ES2015 introduced arrow functions which don't provide their own 'this' binding (it retains the 'this' value of the enclosing lexical context).",
   ""
+],
+[
+  "JavaScript",
+  "Describe event bubbling and capturing",
+  "Bubbling: When an event happens on an element, it first runs the handlers on it, then on its parent, then all the way up on it's ancestors. ;; Target: The most deeply nested element that caused the event is called a 'target' element, accessible as 'event.target'. ;; Capturing: The event going down to target (rarely used).",
+  "./images/bubblingcapturing.png"
 ]
 ]
 
